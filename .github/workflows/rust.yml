@@ -17,9 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: |
-         cd phira 
-         cargo build --target=android
+      run: cargo build --target android-unknown-unknown --release --bin phira
+
+
 
 
     - name: Run tests
