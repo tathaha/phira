@@ -17,8 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: cargo build --verbose
-    - name: run test
-      run: cargo build --target=armv7-linux-androideabi
+      run: cargo  build --target=armv7-linux-androideabi
+
+
     - name: Run tests
       run: cargo test --verbose
