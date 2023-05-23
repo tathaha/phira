@@ -17,9 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - uses: install dependencies
-      run: sudo apt-get install libatk1.0-dev
-      
+   
+    - run: sudo apt-get install libatk1.0-dev
+
     - run: export PKG_CONFIG_PATH="/usr/lib/pkgconfig:$PKG_CONFIG_PATH"
 
     - name: Build
@@ -29,4 +29,4 @@ jobs:
 
 
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo test --verbos
