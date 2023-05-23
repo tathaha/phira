@@ -17,7 +17,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-   
+    - run: find / -name alsa.pc 2>/dev/null
+    - run: export PKG_CONFIG_PATH=/path/to/alsa/pc/file/directory:$PKG_CONFIG_PATH
+
+
     - run: sudo apt-get install libatk1.0-dev libgtk-3-dev
 
     - run: export PKG_CONFIG_PATH="/usr/lib/pkgconfig:$PKG_CONFIG_PATH"
