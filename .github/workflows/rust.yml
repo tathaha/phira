@@ -26,7 +26,7 @@ jobs:
     - run: export PKG_CONFIG_PATH="/usr/lib/pkgconfig:$PKG_CONFIG_PATH"
 
     - name: Build
-      run: cargo build
+      run: cargo build --target android-unknown-unknown --release --bin phira-main
 
 
 
