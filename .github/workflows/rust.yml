@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - run: find / -name alsa.pc 2>/dev/null
+    
     - run: export PKG_CONFIG_PATH=/path/to/alsa/pc/file/directory:$PKG_CONFIG_PATH
 
 
